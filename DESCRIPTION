@@ -1,0 +1,13 @@
+Package: multilayerUtils
+Type: Package
+Title: Adds Functionality to R for Multilayer Network Analysis in Brain Networks
+Version: 0.1.0
+Author: Brady Williamson <willi3by@ucmail.uc.edu>
+Maintainer: Brady Williamson <willi3by@ucmail.uc.edu>
+Description: Provides utility and graphing functions for multilayer network
+  analyses. Functions are meant to interact with other graph packages, such as
+  MuxViz and iGraph.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
