@@ -33,7 +33,8 @@ Returns Extended Edges List to be used with muxViz
 Generate Extended Edges List that is Compatible with MuxViz
 }
 \examples{
+\dontrun{
 Ext_edges <- GenerateExtendedEdgeListfromMatrices <- function(Matrix_list, Layers, Nodes, Threshold_percentile = 0,  doOMST = FALSE, Bin_struct = Bin_struct)
-
+}
 
 }

@@ -11,9 +11,13 @@
 #' @return Returns Extended Edges List to be used with muxViz
 #' @export
 #'
-#' @examples
-#' Ext_edges <- GenerateExtendedEdgeListfromMatrices <- function(Matrix_list, Layers, Nodes, Threshold_percentile = 0,  doOMST = FALSE, Bin_struct = Bin_struct)
+#' @importFrom gtools combinations
+#' @importFrom pracma repmat
 #'
+#' @examples
+#' \dontrun{
+#' Ext_edges <- GenerateExtendedEdgeListfromMatrices <- function(Matrix_list, Layers, Nodes, Threshold_percentile = 0,  doOMST = FALSE, Bin_struct = Bin_struct)
+#' }
 #'
 GenerateExtendedEdgeListfromMatrices <- function(Matrix_list, Layers, Nodes, Threshold_percentile = 0,  doOMST = FALSE, ...){
   combs <- combinations(Layers, 2, repeats.allowed = T)
