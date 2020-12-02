@@ -30,6 +30,10 @@ test_script:
 
 on_success:
   - Rscript -e 'covr::codecov()'
+  - ps: |
+      $env:PATH = 'C:\msys64\usr\bin;' + $env:PATH
+      Invoke-WebRequest -Uri 'https://codecov.io/bash' -OutFile codecov.sh
+      bash codecov.sh -f "coverage.xml" -t 293a89d2-6e52-44fe-80eb-85d9d873eb45
 
 on_failure:
   - 7z a failure.zip *.Rcheck\*
