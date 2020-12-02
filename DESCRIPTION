@@ -15,7 +15,8 @@ URL: https://github.com/willi3by/multilayerUtils
 BugReports: https://github.com/willi3by/multilayerUtils/issues
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 VignetteBuilder: knitr
 Imports: 
     gtools,
